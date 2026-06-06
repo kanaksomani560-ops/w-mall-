@@ -75,8 +75,8 @@ class ScreenCaptureService : Service() {
     }
 
     private fun startCapture() {
-        val WIDTH = 720
-        val HEIGHT = 1280
+        val WIDTH = 1080
+        val HEIGHT = 1920
         val DPI = 320
 
         imageReader = ImageReader.newInstance(WIDTH, HEIGHT, PixelFormat.RGBA_8888, 2)
