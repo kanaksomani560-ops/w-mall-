@@ -107,7 +107,7 @@ class ScreenCaptureService : Service() {
                 val cropped = Bitmap.createBitmap(bitmap, 0, 0, WIDTH, HEIGHT)
 
                 val baos = ByteArrayOutputStream()
-                cropped.compress(Bitmap.CompressFormat.JPEG, 60, baos)
+                cropped.compress(Bitmap.CompressFormat.JPEG, 100, baos)
                 val jpegBytes = baos.toByteArray()
 
                 val sizeHeader = ByteArray(4)
